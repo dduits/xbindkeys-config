@@ -1,0 +1,61 @@
+#####################################
+#  Logitech G305 - xbinkeys config  #
+#####################################
+#
+# Author: dduits 
+# GitHub: https://github.com/dduits
+# Licence: unlicense, see the LICENSE file for more information.
+# Dependency: MPC, workspace-switcher.sh, mouse-navigation.sh.
+# 
+# This file contains a set of xbindkeys bindings 
+# that can be used with a the Logitech G305.
+
+#####################################
+#             G305 - MPD            #
+#####################################
+
+# Play / Pause Button = MPC Play / Pause
+# NOTE: This requires that you've set the button under the scroll wheel
+# to the button for regular play / pause music.
+"mpc toggle"
+    XF86AudioPlay
+
+# Ctrl + Shift + Scroll Up = MPC Increase +2 Volume 
+"mpc volume +2"
+   Control + Shift + b:4
+
+# Ctrl + Shift + Scroll Down = MPC Decrease +2 Volume 
+"mpc volume -2"
+   Control + Shift + b:5
+
+# Ctrl + Super + Mouse Forward = MPC Play Next
+"mpc next"
+	Control + Shift + b:9
+
+# Ctrl + Super + Mouse Back = MPC Play Previous
+"mpc prev"
+	Control + Shift + b:8
+
+############################################
+#             G305 - WORKSPACE             #
+############################################
+
+# Ctrl + Mouse Forward = Move to the right workspace.
+"~/script/workspace-switcher.sh right"
+	Control + b:9
+
+# Ctrl + Mouse Back = Move to the left workspace.
+"~/script/workspace-switcher.sh left"
+	Control + b:8
+
+############################################
+#             G305 - NAVIGATION            #
+############################################
+
+# Mouse Forward = Navigate forward with the navigation script.
+"~/script/mouse-navigation.sh forward"
+	b:9
+
+# Mouse Back = Navigate back with the navigation script.
+"~/script/mouse-navigation.sh backward"
+    b:8

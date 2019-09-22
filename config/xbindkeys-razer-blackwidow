@@ -1,0 +1,26 @@
+########################################
+#  Razer BlackWidow - xbinkeys config  #
+########################################
+#
+# Author: dduits 
+# GitHub: https://github.com/dduits
+# Licence: unlicense, see the LICENSE file for more information.
+# Dependency: MPC.
+# 
+# This file contains a set of xbindkeys bindings 
+# that can be used with a the Razer BlackWidow.
+
+###########################################
+#             BlackWidow - MPD            #
+###########################################
+
+# Play / Pause Button = MPC Play / Pause
+"mpc toggle"
+    XF86AudioPlay
+
+# Play / Pause Button = MPC Play / Pause
+"mpc next"
+    XF86AudioNext
+
+"mpc prev"
+    XF86AudioPrev

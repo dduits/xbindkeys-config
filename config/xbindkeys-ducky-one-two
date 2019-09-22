@@ -1,0 +1,35 @@
+#####################################
+#  Ducky One Two - xbinkeys config  #
+#####################################
+#
+# Author: dduits 
+# GitHub: https://github.com/dduits
+# Licence: unlicense, see the LICENSE file for more information.
+# Dependency: MPC.
+# 
+# This file contains a set of xbindkeys bindings 
+# that can be used with a Ducky One Two.
+
+#######################################
+#             Ducky - MPD             #
+#######################################
+
+# Ctrl + Super + Home = MPC Play / Pause
+"mpc toggle"
+    Control + Mod4 + Home
+
+# Ctrl + Super + PageUp = MPC Play Next
+"mpc next"
+    Control + Mod4 + Prior
+
+# Ctrl + Super + PageDown = MPC Play Previous
+"mpc prev"
+    Control + Mod4 + Next
+
+# Ctrl + Super + Volume Up = MPC Increase +2 Volume
+"mpc volume +2"
+    Control + Mod4 + XF86AudioRaiseVolume
+
+# Ctrl + Super + Volume Down = MPC Increase -2 Volume
+"mpc volume -2"
+    Control + Mod4 + XF86AudioLowerVolume
