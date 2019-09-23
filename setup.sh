@@ -30,7 +30,7 @@ then
 
     mkdir -p ~/script
     cp $DIR/src/workspace-switcher.sh ~/script
-    cp $DIR/src/navigation-btn.sh ~/script
+    cp $DIR/src/mouse-navigation.sh ~/script
 elif [ $mouseInput = "2" ]
 then
     echo "Setting up bindings for MX Master S2..."
