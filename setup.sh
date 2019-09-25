@@ -52,6 +52,7 @@ echo "Select a keyboard to setup (enter number):"
 echo "0. None (Default)"
 echo "1. Ducky One Two"
 echo "2. Razer BlackWidow Ultimate"
+echo "3. Laptop"
 
 read -p "> " keyboardInput
 
@@ -68,6 +69,15 @@ then
     echo "Setting up bindings for Razer BlackWiddow Ultimate..."
     echo >> ~/.xbindkeysrc
     cat $DIR/config/xbindkeys-razer-blackwidow >> ~/.xbindkeysrc
+elif [ $keyboardInput = "3" ]
+then
+    echo "Setting up bindings for Laptop..."
+
+    mkdir -p ~/script
+    cp $DIR/src/touchpad-toggle.sh ~/script
+
+    echo >> ~/.xbindkeysrc
+    cat $DIR/config/xbindkeys-laptop >> ~/.xbindkeysrc
 else
     echo "Invalid keyboard choice."
     exit 128

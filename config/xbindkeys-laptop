@@ -1,0 +1,22 @@
+##############################
+#  Laptop - xbinkeys Config  #
+##############################
+#
+# Author: dduits 
+# GitHub: https://github.com/dduits
+# Licence: unlicense, see the LICENSE file for more information.
+# 
+# This file contains a set of xbindkeys bindings 
+# that can be used with a laptop.
+
+#########################################
+#             Laptop - MISC             #
+#########################################
+
+# Ctrl + Shift + Home = Toggle the touch pad on or off
+"~/script/touchpad-toggle.sh"
+    Control + Shift + Home
+
+#########################
+#  Laptop - Config END  #
+#########################
