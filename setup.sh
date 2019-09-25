@@ -12,13 +12,13 @@ clear
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 echo "Select mouse to setup (enter number):"
-echo "0. None"
+echo "0. None "
 echo "1. G305"
 echo "2. MX Master S2"
 
 read -p "> " mouseInput
 
-if [ $mouseInput = "0" ]
+if [[ $mouseInput = "0" || ! -n ${mouseInput} ]]
 then
     echo "Skipping mouse setup."
 elif [ $mouseInput = "1" ]
@@ -49,13 +49,13 @@ echo "Mouse setup done."
 echo
 
 echo "Select a keyboard to setup (enter number):"
-echo "0. None"
+echo "0. None (Default)"
 echo "1. Ducky One Two"
 echo "2. Razer BlackWidow Ultimate"
 
 read -p "> " keyboardInput
 
-if [ $keyboardInput = "0" ]
+if [[ $keyboardInput = "0" || ! -n ${keyboardInput} ]]
 then
     echo "Skipping keyboard setup."
 elif [ $keyboardInput = "1" ]
