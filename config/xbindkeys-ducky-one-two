@@ -1,5 +1,5 @@
 #####################################
-#  Ducky One Two - xbinkeys config  #
+#  Ducky One Two - xbinkeys Config  #
 #####################################
 #
 # Author: dduits 
@@ -33,3 +33,7 @@
 # Ctrl + Super + Volume Down = MPC Increase -2 Volume
 "mpc volume -2"
     Control + Mod4 + XF86AudioLowerVolume
+
+################################
+#  Ducky One Two - Config END  #
+################################

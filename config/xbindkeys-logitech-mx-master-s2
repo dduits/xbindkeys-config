@@ -1,5 +1,5 @@
 #############################################
-#  Logitech MX Master S2 - xbinkeys config  #
+#  Logitech MX Master S2 - xbinkeys Config  #
 #############################################
 #
 # Author: dduits 
@@ -62,3 +62,7 @@
 # Delay required to properly capture multi keystroke send by MX Master thumb button.
 "sleep 0.1 && guake -t"
  	m:0xc + c:23
+
+########################################
+#  Logitech MX Master S2 - Config END  #
+########################################

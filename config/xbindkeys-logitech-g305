@@ -1,5 +1,5 @@
 #####################################
-#  Logitech G305 - xbinkeys config  #
+#  Logitech G305 - xbinkeys Config  #
 #####################################
 #
 # Author: dduits 
@@ -59,3 +59,7 @@
 # Mouse Back = Navigate back with the navigation script.
 "~/script/mouse-navigation.sh backward"
     b:8
+
+################################
+#  Logitech G305 - Config END  #
+################################

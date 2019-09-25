@@ -1,5 +1,5 @@
 ########################################
-#  Razer BlackWidow - xbinkeys config  #
+#  Razer BlackWidow - xbinkeys Config  #
 ########################################
 #
 # Author: dduits 
@@ -24,3 +24,7 @@
 
 "mpc prev"
     XF86AudioPrev
+
+###################################
+#  Razer BlackWidow - Config END  #
+###################################
