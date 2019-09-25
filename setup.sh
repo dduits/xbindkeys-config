@@ -34,7 +34,13 @@ then
 elif [ $mouseInput = "2" ]
 then
     echo "Setting up bindings for MX Master S2..."
-    # TODO: Setup bindings for MX Master S2.
+
+    echo >> ~/.xbindkeysrc
+    cat $DIR/config/xbindkeys-logitech-mx-master-s2 >> ~/.xbindkeysrc
+
+    mkdir -p ~/script
+    cp $DIR/src/workspace-switcher.sh ~/script
+    cp $DIR/src/mouse-navigation.sh ~/script
 else
     echo "Invalid mouse choice."
     exit 128

@@ -1,0 +1,64 @@
+#############################################
+#  Logitech MX Master S2 - xbinkeys config  #
+#############################################
+#
+# Author: dduits 
+# GitHub: https://github.com/dduits
+# Licence: unlicense, see the LICENSE file for more information.
+# Dependency: Guake, Cinnamon
+# 
+# This file contains a set of xbindkeys bindings 
+# that can be used with a the Logitech MX Master S2.
+
+###################################
+#             S2 - MPD            #
+###################################
+
+# Horizontal Wheel Up = Increase volume
+"amixer -D pulse set Master 4000+ unmute"
+	Control + b:6
+
+# Horizontal Wheel Down = Decrease volume
+"amixer -D pulse set Master 4000-"
+	Control + b:7
+
+##########################################
+#             S2 - WORKSPACE             #
+##########################################
+
+# Ctrl + Mouse Forward = Move to the right workspace.
+"~/script/workspace-switcher.sh right"
+	Control + b:9
+
+# Ctrl + Mouse Back = Move to the left workspace.
+"~/script/workspace-switcher.sh left"
+	Control + b:8
+
+# Ctrl + Super + Mouse Forward = Show Cinnamon application overview.
+"sleep 0.2 && dbus-send --session --type=method_call --dest=org.Cinnamon /org/Cinnamon org.Cinnamon.ShowOverview"
+	Control + Mod4 + b:9
+
+# Ctrl + Super + Mouse Forward = Show Cinnamon workspace overview.
+"sleep 0.2 && dbus-send --session --type=method_call --dest=org.Cinnamon /org/Cinnamon org.Cinnamon.ShowExpo"
+	Control + Mod4 + b:8
+
+##########################################
+#             S2 - NAVIGATION            #
+##########################################
+
+# Mouse Forward = Navigate forward with the navigation script.
+"~/script/mouse-navigation.sh forward"
+	b:9
+
+# Mouse Back = Navigate back with the navigation script.
+"~/script/mouse-navigation.sh backward"
+    b:8
+
+#####################################
+#             S2 - MICS             #
+#####################################
+
+# Mouse Thumb Button = Toggle Guake Visibility
+# Delay required to properly capture multi keystroke send by MX Master thumb button.
+"sleep 0.1 && guake -t"
+ 	m:0xc + c:23
