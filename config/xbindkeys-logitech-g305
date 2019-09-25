@@ -48,6 +48,14 @@
 "~/script/workspace-switcher.sh left"
 	Control + b:8
 
+# Ctrl + Super + Mouse Forward = Show Cinnamon application overview.
+"sleep 0.2 && dbus-send --session --type=method_call --dest=org.Cinnamon /org/Cinnamon org.Cinnamon.ShowOverview"
+	Control + Mod4 + b:9
+
+# Ctrl + Super + Mouse Forward = Show Cinnamon workspace overview.
+"sleep 0.2 && dbus-send --session --type=method_call --dest=org.Cinnamon /org/Cinnamon org.Cinnamon.ShowExpo"
+	Control + Mod4 + b:8
+
 ############################################
 #             G305 - NAVIGATION            #
 ############################################
